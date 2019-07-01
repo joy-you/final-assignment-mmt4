@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="true">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/video-js.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    
+    
+
+    <title>MMT 4</title>
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <div id="logo"></div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Lesmateriaal</a></li>
+                <li><a href="#">Over ons</a></li>
+            </ul>
+        </nav>    
+    </header>   
+
+    <main>
+       
+        <div id="intro">
+    
+        <h2 id="groot">Van beginner naar expert<br>Het lesmateriaal brengt je verder</h2>
+
+        <p>
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam 
+        venenatis vestibulum. Etiam porta sem malesuada magna mollis 
+        euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        Donec id elit non mi porta gravida at eget metus. Vivamus 
+        sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+        </p>
+
+        <img src="images/src/header.jpg" alt="header">
+
+        </div>
+        <div id="container">
+
+            <p id="playlist">Playlist</p>
+            <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+                
+                <h3>
+                    <button class="pijl"></button>
+                    Algemene introductie
+                    <button class="klaar" id="klaar1"></button>
+                    <button id="introroze"></button>
+                </h3> 
+                <div class="videocontainer">
+                    <p class="vidtitel">Algemene introductie</p>
+                    <video class="video-js" id="video1" data-setup='{"fluid":true}' width="100%" muted>
+                    <source src="video/small.mp4" type="video/mp4"></video>
+                    
+                    <button class="rewind"></button>
+                    <button class="toggle"></button>
+                    <button class="done" id="done1"></button>
+                    
+                </div>
+                
+                <h3>
+                    <button class="pijl"></button>
+                    Workshop 1: Kleuren met code
+                    <button class="klaar" id="klaar2"></button>
+                    <button class="workshop"></button>
+                    <button class="downloads"></button>
+                </h3>
+                <div class="videocontainer">
+                        <p class="vidtitel">Workshop 1: Kleuren met code</p>
+                        <video class="video-js" id="video2" data-setup='{"fluid":true}' width="100%" muted>
+                        <source src="video/small.mp4" type="video/mp4"></video>
+                        
+                        <button class="rewind"></button>
+                        <button class="toggle"></button>
+                        <button class="done" id="done2"></button>
+                    </div>
+
+                <h3>
+                    <button class="pijl"></button>
+                    Workshop 2: Vormen maken
+                    <button class="klaar" id="klaar3"></button>
+                    <button class="workshop"></button>
+                </h3>
+                <div class="videocontainer">
+                        <p class="vidtitel">Workshop 2: Vormen maken</p>
+                        <video class="video-js" id="video3" data-setup='{"fluid":true}' width="100%" muted>
+                        <source src="video/small.mp4" type="video/mp4"></video>
+                        
+                        <button class="rewind"></button>
+                        <button class="toggle"></button>
+                        <button class="done" id="done3"></button>
+                    </div>
+
+                <h3>
+                    <button class="pijl"></button>
+                    Workshop 3: Beweging
+                    <button class="klaar" id="klaar4"></button>
+                    <button class="workshop"></button>
+                    <button class="downloads"></button>
+                </h3>
+                <div class="videocontainer">
+                        <p class="vidtitel">Workshop 3: Beweging</p>
+                        <video class="video-js" id="video4" data-setup='{"fluid":true}' width="100%" muted>
+                        <source src="video/small.mp4" type="video/mp4"></video>
+                        
+                        <button class="rewind"></button>
+                        <button class="toggle"></button>
+                        <button class="done" id="done4"></button>
+                    </div>
+
+                <h3>
+                    <button class="pijl"></button>
+                    Workshop 4: Variabelen gebruiken
+                    <button class="klaar" id="klaar5"></button>
+                    <button class="workshop"></button>
+                </h3>
+                <div class="videocontainer">
+                        <p class="vidtitel">Workshop 4: Variabelen gebruiken</p>
+                        <video class="video-js" id="video5" data-setup='{"fluid":true}' width="100%" muted>
+                        <source src="video/small.mp4" type="video/mp4"></video>
+                        
+                        <button class="rewind"></button>
+                        <button class="toggle"></button>
+                        <button class="done" id="done5"></button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <button id="sluit"></button>
+            <p>Je hebt de video bekeken!</p>
+        </div>
+
+    
+    
+    <div id="supportcontainer">
+        <div class="personen">
+            <div class="foto" id="een"></div>
+            <div class="info">
+                <p class="naam">Klaartje Klaassen</p>
+                <p class="functie">Hoofd contactpersoon</p>
+                <div class="email">email</div>
+            </div>
+        </div>
+
+        <div class="personen">
+            <div class="foto" id="twee"></div>
+            <div class="info">
+                <p class="naam">Klaartje Klaassen</p>
+                <p class="functie">Hoofd contactpersoon</p>
+                <div class="email">email</div>
+            </div>
+        </div>
+
+        <div class="personen">
+            <div class="foto" id="drie"></div>
+            <div class="info">
+                <p class="naam">Klaartje Klaassen</p>
+                <p class="functie">Hoofd contactpersoon</p>
+                <div class="email">email</div>
+            </div>
+        </div>
+
+        <div class="personen">
+            <div class="foto" id="vier"></div>
+            <div class="info">
+                <p class="naam">Klaartje Klaassen</p>
+                <p class="functie">Hoofd contactpersoon</p>
+                <div class="email">email</div>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="support">Support</p>
+    <h2 class="supporttext">Kom je er niet uit?<br>Wij helpen je graag verder</h2>
+
+
+    <div id="uitdaging">
+        <div id="uitdagingtekst">
+            <h2>Klaar voor de <br> volgende uitdaging?</h2>
+            <p>In ons expertprogramma vind je lessen voor gevorderen</p>
+            <div id="meer"><a href="http://www.youtube.com">Kom maar op</a></div>
+        </div>
+    </div>
+   
+</main>
+<footer>
+    <div id="footer">
+    <p>Switch theme</p>
+    <a href="#" id="switch" class="active"></a>
+    </div>
+</footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://vjs.zencdn.net/6.4.0/video.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

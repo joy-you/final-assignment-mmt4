@@ -1,0 +1,821 @@
+.clear{
+    clear: both;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+#intro img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#logo{
+    background-image: url(../images/src/logoblauw.svg);
+    z-index: 2000;
+    position: absolute;
+    position: fixed;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 100px;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    position: fixed;
+    border: 1px solid #EBEBEB;
+    top: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+  }
+li {
+    float: right;
+  }
+li a {
+    display: block;
+    color:#1D00FF;
+    padding: 20px 20px;
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 100px;
+  }
+#groot{
+      font-family: playfair display;
+      font-size: 3vw;
+      color: white;
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 270px;
+  }
+#intro p{
+      font-family: montserrat;
+      font-size: 1.5vw;
+      color: white;
+      position: absolute;
+      white-space: pre-wrap;
+      margin-left: 225px;
+      margin-top: 280px;
+      margin-bottom: 100px;
+  }
+#container{
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    margin-top: -200px;
+    padding: 100px;
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+#playlist{
+    color: #1D00FF;
+    font-family: montserrat;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+.ui-accordion-header-collapsed{
+    color: #4B4B4B;
+    background-color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.ui-accordion-header-active{
+    color: #1D00FF;
+    background-color: white;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.ui-state-active .pijl{
+    background-image: url(../images/src/pijlblauw.svg);
+}
+#accordion h3 {
+    height: 60px;
+    font-size: 1.3vw;
+    line-height: 60px;
+    position: relative;
+    padding-left: 60px;
+}
+.pijl {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/src/pijlgrijs.svg);
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border: none;
+    z-index: 50;
+}
+.klaar {
+    width: 115px;
+    height: 40px;
+    background-image: url(../images/src/klaar.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    z-index: 50;
+    margin: 10px;
+    display: none;
+}
+#introroze{
+    background-image: url(../images/src/intro.svg);
+    width: 10vw;
+    height: 3vw;
+    background-repeat: no-repeat;
+    border: none;
+    float: right;
+    margin: 10px;
+    position: relative;
+}
+.rewind{
+    background-image: url(../images/src/rewind.svg);
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    background-size: cover;
+    margin-top: -350px;
+    margin-left: 300px;
+    border-radius: 50px;
+    cursor: grab;
+    z-index: 5;
+    display: none;
+}
+.toggle{
+    background-image: url(../images/src/play.svg);
+    width: 6vw;
+    height: 6vw;
+    border: none;
+    position: absolute;
+    border-radius: 50px;
+    margin-top: -360px;
+    margin-left: 450px;
+    background-size: cover;
+    cursor: grab;
+    z-index: 5;
+    display: none;
+}
+.done{
+    background-image: url(../images/src/done.svg);
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    position: absolute;
+    background-size: cover;
+    margin-top: -350px;
+    margin-left: 620px;
+    border-radius: 50px;
+    cursor: grab;
+    z-index: 5;
+    display: none;
+}
+.vidtitel {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+    display: none;
+}
+.videocontainer:hover .vidtitel{
+    display: block;
+}
+.videocontainer:hover .toggle{
+    display: block;
+}
+.videocontainer:hover .rewind{
+    display: block;
+}
+.videocontainer:hover .done{
+    display: block;
+}
+.workshop{
+    background-image: url(../images/src/workshop.svg);
+    width: 10vw;
+    height: 3vw;
+    margin: 10px;
+    cursor: grab;
+    left: 300;
+    float: right;
+    border: none;
+    background-repeat: no-repeat;
+}
+.downloads{
+    background-image: url(../images/src/downloads.svg);
+    width: 14vw;
+    height: 3vw;
+    background-repeat: no-repeat;
+    border: none;
+    background-size: auto;
+    cursor: grab;
+    margin: 10px;
+    float: right;
+}
+#modal{
+    /* display: none; */
+    background-color: #BBFFB2;
+    display: block;
+    width: 200px;
+    height: 250px;
+    color: #119100;
+    font-family: montserrat;
+    font-size: 3vw;
+    font-weight: 900;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 500px;
+    margin-top: -1000px;
+    position: absolute;
+    display: none;
+    z-index: 100;
+    animation-name: draai;
+    animation-duration: 100ms;
+    animation-iteration-count: 2;
+}
+@keyframes draai {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    33% {
+    transform: rotate(60deg);
+    }
+
+    66% {
+    transform: rotate(120deg);
+    }
+    
+    100% {
+    transform: rotate(180deg);
+    }
+}
+#sluit{
+    background-image: url(../images/src/sluit.svg);
+    width: 2vw;
+    height: 2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #BBFFB2;
+    border: none;
+    cursor: grab;
+    margin-top: -80px;
+    margin-left: 250px;
+    position: absolute;
+}
+#support{
+    color: #1D00FF;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 1.5vw;
+    left: 150px;
+    float: left;
+    position: absolute;
+    margin-top: -150px;
+}
+.supporttext{
+    font-family: playfair display;
+    font-size: 3vw;
+    color: #1D00FF;
+    float: left;
+    margin-top: -100px;
+    position: absolute;
+    margin-left: 150px;
+}
+#supportcontainer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.personen{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-top: 50px;
+}
+.foto{
+    width: 14vw;
+    height: 14vw;
+    border-radius: 100%;
+    background-size: cover;
+    float: left;
+}
+.naam{
+    font-family: montserrat;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 220px;
+    overflow: hidden;
+}
+.functie{
+    font-family: montserrat;
+    color: #EBEBEB;
+    font-size: 1.4vw;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.email{
+    text-transform: uppercase;
+    width: 10vw;
+    background-color: black;
+    font-family: montserrat;
+    color: white;
+    font-size: 1.2vw;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin: 10px;
+    display: block;
+    margin-left: 220px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+}
+#een{
+    background-image: url(../images/src/kal-visuals-592091-unsplash.jpg);
+}
+#twee{
+    background-image: url(../images/src/giorgio-encinas-781653-unsplash.jpg);
+}
+#drie{
+    background-image: url(../images/src/norman-toth-177973-unsplash.jpg);
+}
+#vier{
+    background-image: url(../images/src/alina-kovalchuk-1143928-unsplash.jpg);
+}
+#uitdagingtekst{
+    background-image: url(../images/src/challenge.jpg);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-size: cover;
+    margin-top: 550px;
+}
+#uitdaging h2{
+    text-align: center;
+    font-size: 3.5vw;
+    color: white;
+    font-family: playfair display;
+    margin-top: 100px;
+}
+#uitdaging p{
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+    font-family: montserrat;
+    margin-top: 50px;
+}
+#meer a{
+    display: block;
+    background-color: #1D00FF;
+    border-radius: 15px;
+    width: 12vw;
+    color: #FFAFE3;
+    font-family: montserrat;
+    padding: 20px;
+    font-size: 1.4vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 600px;
+    margin-top: 50px;
+    cursor: grab;
+    margin-bottom: 50px;
+    height: auto;
+    text-decoration-line: none;
+}
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: #000000;
+    margin-top: 980px;
+}
+#footer p {
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 40px;
+    right: 150px;
+}
+#switch{
+    background-image: url(../images/src/switch.svg);
+    width: 6.2vw;
+    height: 3.2vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1300px;
+    margin-top: 40px;
+}
+.darkmode {
+    background: #000000;
+}
+
+.darkmode nav {
+    background: #000000;
+    border: none;
+}
+
+.darkmode #logo {
+    background-image: url(../images/src/logowit.svg);
+}
+
+.darkmode nav a {
+    color: #ffffff;
+}
+
+.darkmode #container {
+    background: #000000;
+}
+
+.darkmode .klaar{
+    background-color: #000000;
+}
+
+.darkmode #playlist {
+    color: #ffffff;
+}
+
+.darkmode .downloads{
+    background-color: #000000;
+}
+
+.darkmode .workshop{
+    background-color: #000000;
+}
+
+.darkmode #introroze{
+    background-color: #000000;
+}
+
+.darkmode .naam{
+    color: white;
+}
+.darkmode .pijl {
+    background-image: url(../images/src/pijlwit.svg);
+    background-color: #000000;
+}
+.darkmode .ui-state-default {
+    background: #000000;
+    color: #ffffff;
+}
+
+.darkmode .ui-state-active {
+    color: #1D00FF;
+}
+
+.darkmode .ui-state-active .pijl {
+    background-image: url(../images/src/pijlblauw.svg);
+    background-color: #000000;
+}
+
+.darkmode .ui-accordion-content {
+    background: #000000;
+    border-color: #1D00FF;
+}
+
+.darkmode #support {
+    color: #ffffff;
+}
+
+.darkmode .supporttext {
+    color: #ffffff;
+}
+
+.darkmode .functie{
+    color: #ffffff;
+}
+
+.darkmode .email {
+    background: #ffffff;
+    color: #000000;
+}
+.darkmode #switch {
+    background-image: url(../images/src/switch2.svg);
+}
+
+@media screen and (max-width: 1400px){
+    #footer{
+        margin-top: 950px;
+    }
+    .downloads{
+        width: 15vw;
+        height: 4vw;
+    }
+    .workshop{
+        width: 12vw;
+        height: 4vw;
+    }
+    #intro{
+        height: auto;
+    }
+    #container{
+        width: 100%;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .personen{
+        width: 800px;
+    }
+    ul li a{
+        font-size: 1.8vw;
+        padding: 20px 20px;
+        margin-top: 20px;
+    }
+    #logo{
+        margin-left: 5px;
+    }
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+    .downloads{
+        width: 20vw;
+        height: 4vw;
+        background-size: cover;
+    }
+    .workshop{
+        width: 15vw;
+        height: 4vw;
+        background-size: cover;
+    }
+    #intro{
+        height: auto;
+    }
+    .naam{
+        font-size: 2vw;
+    }
+    .funtie{
+        font-size: 2vw;
+    }
+    #introroze{
+        width: 13vw;
+        height: 5vw;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+    .videocontainer{
+        width: 90%;
+    }
+    .downloads{
+        display: none;
+    }
+    #uitdaging{
+        margin-top: 300px;
+    }
+    .workshop{
+        width:15vw;
+        height: 5vw;
+        background-color: white;
+    }
+    #introroze{
+        width: 15vw;
+        height: 5vw;
+        background-color: white;
+    }
+    .pijl{
+        background-color: white;
+    }
+    .naam{
+        font-size: 2vw;
+    }
+    .functie{
+        font-size: 1.8vw;
+    }
+    #uitdagingtekst{
+        margin-top: 750px;
+    }
+    ul li a{
+        font-size: 1.8vw;
+        padding: 20px 50px;
+    }
+    #footer{
+        margin-top: 1100px;
+    }
+    #meer{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #intro{
+        height: auto;
+    }
+    .rewind{
+        margin-left: 10px;
+    }
+    .toggle{
+        margin-left: 10px;
+    }
+    .done{
+        margin-left: 10px;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    ul li a{
+        font-size: 1.5vw;
+        padding: 20px 20px;
+        margin-top: 20px;
+    }
+    #logo{
+        margin-left: 5px;
+    }
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+    #uitdaging{
+        margin-top: 300px;
+    }
+    .downloads{
+        width: 17vw;
+        height: 10vw;
+        background-size: cover;
+    }
+    #intro{
+        height: auto;
+    }
+    #introroze{
+        width: 13vw;
+        height: 5vw;;
+    }
+    .rewind{
+        margin-left: 10px;
+        
+    }
+    .toggle{
+        margin-left: 10px;
+    }
+    .done{
+        margin-left: 10px;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #container{
+        width: 70%;
+        left: 0;
+    }
+    .videocontainer{
+        width: 80%;
+    }
+    #intro{
+        height: auto;
+    }
+    .rewind{
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+    .toggle{
+        margin-left: 10px;
+    }
+    .done{
+        margin-left: 10px;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul li a{
+        font-size: 1.5vw;
+        padding: 20px 20px;
+        margin-top: 20px;
+    }
+    #logo{
+        margin-left: 5px;
+        width: 5px;
+        height: 5px;
+    }
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+    .videocontainer{
+        width: 80%;
+    }
+    #intro{
+        height: auto;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .videocontainer{
+        width: 80%;
+    }
+    #intro{
+        height: auto;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+    #meer p{
+        margin-right: 1500px;
+    }
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .videocontainer{
+        width: 80%;
+    }
+    #container{
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+    }
+    #intro{
+        height: auto;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+    #meer a{
+        margin-right: 800px;
+    }
+}
+
+@media screen and (max-width: 100px){
+    #playlist{
+        font-size: 2vw;
+    }
+    #container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .workshop{
+        width: 14vw;
+        height: 4vw;
+        background-size: cover;
+    }
+    .vidtitel{
+        font-size: 1.8vw;
+    }
+    #container h3{
+        font-size: 2vw;
+    }
+    .downloads{
+        display: none;
+    }
+    ul li a{
+        font-size: 1.5vw;
+    }
+    #intro{
+        height: auto;
+    }
+    #introroze{
+        width: 13vw;
+        height: 5vw;
+        background-size: cover;
+    }
+    #intro p{
+        margin-bottom: 100px;
+    }
+
+}
